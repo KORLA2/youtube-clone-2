@@ -5,3 +5,4 @@ export {default as MainContainer} from "./MainContainer";
 export {default as SideBar} from "./SideBar";
 export {default as VideoContainer} from "./VideoContainer";
 export {default as Button} from "./Button"
+export {default as WatchPage} from "./WatchPage/WatchPage"

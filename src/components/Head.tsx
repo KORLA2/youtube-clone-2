@@ -10,7 +10,7 @@ const Head = () => {
     let {isMenuClicked,toggleMenu}=useContext(MenuContext);
 
   return (
-    <div className="fixed z-10 shadow-lg  w-full flex justify-between items-center py-1 px-2 -my-1">
+    <div className="fixed z-20 shadow-lg bg-white w-full flex justify-between items-center py-1 px-2 -my-1">
      
     <div className="flex items-center" >
          <FiMenu className="cursor-pointer p-1 text-3xl hover:bg-gray-300 rounded-full "

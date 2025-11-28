@@ -11,7 +11,6 @@ scrollref.current?.scrollBy({
     behavior:"smooth",
 })
 
-
 }
 
 let scrollRight=()=>{
@@ -21,7 +20,7 @@ scrollref.current?.scrollBy({
 })
 }
 return (
-    <div className='sticky top-0 left-0 w-full  px-10  '>
+    <div className='sticky bg-white w-full  px-10  z-20'>
     
      <button
         onClick={scrollLeft}

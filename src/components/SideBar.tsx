@@ -13,7 +13,6 @@ import MenuContext from "../../utils/MenuContext"
 const SideBar = () => {
 
    let {isMenuClicked}=useContext(MenuContext)
-console.log(isMenuClicked);
 
   return (
     !isMenuClicked?(<div className='shadow-lg p-2 w-40 fixed top-12 overflow-y-scroll'>
