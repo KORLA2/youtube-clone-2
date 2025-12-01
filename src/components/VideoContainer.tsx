@@ -1,13 +1,14 @@
-import React, { useEffect,useState} from 'react'
+import React, { useContext, useEffect,useState} from 'react'
 import {YOUTUBE_API} from "../../utils/constants"
 import VideoCard from './VideoCard'
 import { Link } from 'react-router-dom';
 import type {VideoInfo}  from '../../utils/types.ts';
+import PopularVideos from '../../utils/PopularVideosContext.ts';
 
 
 const VideoContainer = () => {
   
-  let [videos,setVideos]=useState<VideoInfo[]>([])
+let {videos,setVideos}=useContext(PopularVideos)
 
   useEffect(()=>{
   

@@ -16,7 +16,7 @@ let publishedDate=new Date(publishedAt);
  const diffMs = today.getTime() - publishedDate.getTime();
  const diffDays = Math.ceil(diffMs / (1000 * 60 * 60 * 24));
   return (
-    <div className='w-screen lg:w-[75%] rounded-lg bg-gray-200 p-3'>
+    <div className='rounded-lg bg-gray-200 p-3'>
    <div className='font-medium flex gap-4'>
 
    <p >{viewCount} views</p>

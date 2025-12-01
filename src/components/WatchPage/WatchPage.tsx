@@ -8,11 +8,11 @@ const WatchPage = () => {
     let query=searchParams.get("v");
 
 return (
-    <div className= "relative  flex  justify-between top-12 p-10 w-full"  
+    <div className= "relative md:flex flex-row gap-20 top-12 p-10 w-screen "  
               >
-         <div className='w-full h-3/4 rounded-lg '>
+         <div className='md:flex-3 w-full h-3/4 rounded-lg '>
  <iframe
-className='w-full lg:w-[75%]'
+className='w-full'
   height="100%"
   src={`https://www.youtube.com/embed/${query}?autoplay=1&mute=0`}
   title="YouTube video player"
@@ -24,8 +24,10 @@ className='w-full lg:w-[75%]'
 <VideoDetails/>
 <DescriptionBox/>
 <CommentBox/>
-    </div>    
+    </div>   
+    <div className=' hidden md:block md:flex-1'>
       <Recommendations/> 
+      </div> 
     </div>
   )
 }

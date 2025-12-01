@@ -10,21 +10,21 @@ const VideoDetails = () => {
  let {channelTitle,title,publishedAt}=snippet??{};
  let {commentCount,likeCount,viewCount}=statistics??{}
   return (
-    <div className='w-screen lg:w-200 p-3 pr-5'>
+    <div className='md:w-3/4 w-full  p-3 pr-5'>
     <p className='font-bold mb-4'>  {title} </p>
-    <div className='flex flex-col md:flex-row  md:justify-between    lg:w-full  lg:items-center'>
+    <div className='flex flex-col gap-3 md:flex-row  md:justify-between    lg:items-center'>
       {/* 1st Part */}
-        <div className='flex  w-[80%] md:w-[50%] lg:w-[40%]  items-center justify-between'>
+        <div className='flex  flex-1  justify-start items-center gap-3'>
             <p>Logo</p>
             <div>
-                <p className='font-medium cursor-pointer'>{channelTitle}</p>
+                <p className='font-medium text-sm whitespace-nowrap text-blue-500 cursor-pointer'>{channelTitle}</p>
                 <p className='text-sm whitespace-nowrap'>10 subscribers</p>
             </div>
             <button className='rounded-full py-1 px-4 bg-gray-300 cursor-pointer'> Join</button>
             <button className='rounded-full py-1 px-4 bg-black text-white cursor-pointer'> Subscribe</button>
         </div>
         {/* 2ndPart */}
-        <div className='flex  w-50%  lg:m-0 mt-2 md:w-[40%]  justify-between  items-center'>
+        <div className='flex   flex-1  justify-start  md:justify-end gap-5 items-center'>
             <div className='flex  rounded-full bg-gray-100  items-center'>
 
                 <div className=' flex  px-4 py-1  items-center cursor-pointer mr-1 hover:bg-gray-200 rounded-l-full '>
