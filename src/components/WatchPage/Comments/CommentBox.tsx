@@ -11,7 +11,7 @@ const CommentBox = () => {
 
 useEffect(()=>{
     BuildCommentsAPI()
-},[])
+},[videoInfo?.id])
 let BuildCommentsAPI=()=>{
    let complete_comments_api=COMMENTS_API+videoInfo?.id+"&key="+API_KEY;
 

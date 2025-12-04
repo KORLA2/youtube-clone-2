@@ -14,6 +14,7 @@ export interface VideoInfo{
             }
         },
         channelTitle:string,
+        channelId:string,
         publishedAt:string
     }
     statistics:{

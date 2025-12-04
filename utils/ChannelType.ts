@@ -1,0 +1,20 @@
+ export interface ChannelType{
+    snippet:{
+        customUrl:string,
+        description:string,
+        publishedAt:string,
+        thumbnails:{
+            default:{
+                url:string
+            },
+             medium:{
+                url:string
+            },
+        }
+    },
+    statistics:{
+        videoCount:string,
+        viewCount:string,
+        subscriberCount:string
+    }
+}

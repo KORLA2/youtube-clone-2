@@ -30,7 +30,7 @@ setVideos(jsondata.items);
 
 
 {
-  videos.map((video)=> <Link key={video.id} to={"/watch?v="+video.id}> <VideoCard  video={video}/>
+  videos?.map((video)=> <Link key={video.id} to={"/watch?v="+video.id}> <VideoCard  video={video}/>
   </Link>
   )
   

@@ -1,6 +1,7 @@
 import React, { useEffect,useContext } from 'react'
 import PopularVideos from '../../../utils/PopularVideosContext'
 import RecommendedCard from './RecommendedCard'
+import { Link } from 'react-router-dom'
 const Recommendations = () => {
 
      let {videos}=useContext(PopularVideos)
@@ -10,7 +11,7 @@ const Recommendations = () => {
     <div className=' w-full '>
 
 {
-  videos?.map(video=><RecommendedCard video={video}/>)
+  videos?.map(video=><Link to={"/watch?v="+video.id}> <RecommendedCard video={video}/> </Link>)
 }
 
     </div>
